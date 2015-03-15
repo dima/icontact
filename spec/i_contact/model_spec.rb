@@ -11,29 +11,28 @@ describe IContact::Model do
   let(:email) { 'user@example.com' }
   let(:model) { TestModel.new(:email => email) }
 
-
   it 'has a getter and setter for a declared model' do
     new_email = 'another_user@example.com'
-    model.email.should eql(email)
+    expect(model.email).to eql(email)
     model.email = new_email
-    model.email.should eql(new_email)
+    expect(model.email).to eql(new_email)
   end
 
   it 'defaults to a resource name a demodulized version of the class name' do
-    model.class.resource_name.should eql('testmodel')
+    expect(model.class.resource_name).to eql('testmodel')
   end
 
   it 'uses the IContact http connection' do
-    TestModel.connection.should eql(IContact.connection)
+    expect(TestModel.connection).to eql(IContact.connection)
   end
 
   it 'is persisted if the key attribute is populated' do
     model.test_model_id = 1234
-    model.should be_persisted
+    expect(model).to be_persisted
 
     model.test_model_id = nil
     model.attributes = { :test_model_id => 1234 }
-    model.test_model_id.should_not be_nil
+    expect(model.test_model_id).not_to be_nil
   end
 
   it 'appropriately parses json when an array is specified' do
@@ -42,8 +41,8 @@ describe IContact::Model do
     mock_resp.stubs(:body).returns({:testmodels => [{:email => email}]}.to_json)
     mock_resp.stubs(:status).returns(200)
     result = model.class.parse(mock_resp)
-    result.size.should eql(1)
-    result.first.email.should eql(email)
+    expect(result.size).to eql(1)
+    expect(result.first.email).to eql(email)
   end
 end
 

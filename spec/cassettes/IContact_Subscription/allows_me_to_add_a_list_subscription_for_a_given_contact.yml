@@ -1,0 +1,325 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://app.sandbox.icontact.com/icp/a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Api-Appid:
+      - <APP_ID>
+      Api-Username:
+      - <USER_NAME>
+      Api-Password:
+      - <PASSWORD>
+      Api-Version:
+      - '2.2'
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Mar 2015 01:15:46 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '322'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA1WQb0vDMBCHv0rJa6fturo/r9TCQJAhzr0QFUzb6xa8JiW5
+        imXsu3tZs+Hy7p7LPZf89kKWpek0ObF434tCISq9XZMFILEQ4uqEckX9BViT
+        JLggz8aRxNxUlzj3ehuGy0HzYI35xl4zCfsfK8aTZDKbpf6aaVqp+5Vsgqs8
+        SzZaEVTRcb3jDjRSIXM2Vr0DDaXEu62H12zxF7QsELw+4aqWv4OxVtZRWPDC
+        swbbHWOUZ7oeZAybDknlqEDT0mAFlrvxiW/cuW53RvvJaTIbpfP5KE1v51+e
+        /08mScbJlKELAa7ejkVIPIun0RIlFZ3bRfc/oDuIPm6iLMuijE6EB0gRhmxC
+        gq99C+EdritcaVUB9kk1ymvHWcxHHD550vBbxCLhvw7NcXwlTF07vz8+/AEh
+        eF8PEgIAAA==
+    http_version: 
+  recorded_at: Sun, 15 Mar 2015 01:15:46 GMT
+- request:
+    method: get
+    uri: https://app.sandbox.icontact.com/icp/a/414883/c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Api-Appid:
+      - <APP_ID>
+      Api-Username:
+      - <USER_NAME>
+      Api-Password:
+      - <PASSWORD>
+      Api-Version:
+      - '2.2'
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Mar 2015 01:15:47 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '115'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAy3KsQqAIBRG4Xf5ZwlqCHJqClpbo0H0FsLNG2VDhO9eRut3
+        zg3LnkKchR3tB/R4/9J90jtolFVdNQ0UWBbJEk5mBVqN54Gs3/L/fruIuw4K
+        ZA23S66FlRVpUogSDUOX6QEM8VmYcQAAAA==
+    http_version: 
+  recorded_at: Sun, 15 Mar 2015 01:15:47 GMT
+- request:
+    method: post
+    uri: https://app.sandbox.icontact.com/icp/a/414883/c/126299/contacts
+    body:
+      encoding: UTF-8
+      string: ! '[{"email":"subscriber@example.com"}]'
+    headers:
+      Api-Appid:
+      - <APP_ID>
+      Api-Username:
+      - <USER_NAME>
+      Api-Password:
+      - <PASSWORD>
+      Api-Version:
+      - '2.2'
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Mar 2015 01:15:48 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '291'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: US-ASCII
+      string: ! '{"contacts":[{"contactId":"67979261","prefix":"","firstName":"","lastName":"","suffix":"","street":"","street2":"","city":"","state":"","postalCode":"","phone":"","fax":"","business":"","email":"subscriber@example.com","createDate":"2015-03-14
+        21:15:48","bounceCount":"","status":"normal"}]}'
+    http_version: 
+  recorded_at: Sun, 15 Mar 2015 01:15:48 GMT
+- request:
+    method: post
+    uri: https://app.sandbox.icontact.com/icp/a/414883/c/126299/lists
+    body:
+      encoding: UTF-8
+      string: ! '[{"name":"Test Subscription List"}]'
+    headers:
+      Api-Appid:
+      - <APP_ID>
+      Api-Username:
+      - <USER_NAME>
+      Api-Password:
+      - <PASSWORD>
+      Api-Version:
+      - '2.2'
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Mar 2015 01:15:49 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '187'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: US-ASCII
+      string: ! '{"lists":[{"listId":"213619","name":"Test Subscription List","publicname":"","description":"","emailOwnerOnChange":1,"welcomeOnManualAdd":0,"welcomeOnSignupAdd":0,"welcomeMessageId":""}]}'
+    http_version: 
+  recorded_at: Sun, 15 Mar 2015 01:15:49 GMT
+- request:
+    method: post
+    uri: https://app.sandbox.icontact.com/icp/a/414883/c/126299/subscriptions
+    body:
+      encoding: UTF-8
+      string: ! '[{"contactId":67979261,"listId":213619,"status":"normal"}]'
+    headers:
+      Api-Appid:
+      - <APP_ID>
+      Api-Username:
+      - <USER_NAME>
+      Api-Password:
+      - <PASSWORD>
+      Api-Version:
+      - '2.2'
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Mar 2015 01:15:49 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '153'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: US-ASCII
+      string: ! '{"subscriptions":[{"addDate":"2015-03-14T21:15:50-04:00","contactId":"67979261","listId":"213619","status":"normal","subscriptionId":"213619_67979261"}]}'
+    http_version: 
+  recorded_at: Sun, 15 Mar 2015 01:15:50 GMT
+- request:
+    method: post
+    uri: https://app.sandbox.icontact.com/icp/a/414883/c/126299/contacts/67979261
+    body:
+      encoding: UTF-8
+      string: ! '{"status":"deleted"}'
+    headers:
+      Api-Appid:
+      - <APP_ID>
+      Api-Username:
+      - <USER_NAME>
+      Api-Password:
+      - <PASSWORD>
+      Api-Version:
+      - '2.2'
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Sun, 15 Mar 2015 01:15:51 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '134'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: US-ASCII
+      string: ! '{"errors":["The status value you provided was not valid. status can
+        be either donotcontact or normal. Please provide a valid status"]}'
+    http_version: 
+  recorded_at: Sun, 15 Mar 2015 01:15:51 GMT
+- request:
+    method: delete
+    uri: https://app.sandbox.icontact.com/icp/a/414883/c/126299/lists/213619
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Api-Appid:
+      - <APP_ID>
+      Api-Username:
+      - <USER_NAME>
+      Api-Password:
+      - <PASSWORD>
+      Api-Version:
+      - '2.2'
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Mar 2015 01:15:51 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '2'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: US-ASCII
+      string: ! '[]'
+    http_version: 
+  recorded_at: Sun, 15 Mar 2015 01:15:52 GMT
+recorded_with: VCR 2.9.3

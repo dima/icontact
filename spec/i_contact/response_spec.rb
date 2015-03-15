@@ -11,17 +11,17 @@ describe IContact::Response do
   let(:response) { IContact::Response.new(mock_raw_resp) }
 
   it 'finds errors when present' do
-    response.errors.should eql(JSON.parse(mock_raw_resp.body)["errors"])
+    expect(response.errors).to eql(JSON.parse(mock_raw_resp.body)["errors"])
   end
 
   it 'is invalid when errors are present' do
     response.stubs(:errors).returns(['something is wonky'])
-    response.should_not be_valid
+    expect(response).not_to be_valid
   end
 
   it 'is valid when errors are present' do
     response.stubs(:errors).returns([])
-    response.should be_valid
+    expect(response).to be_valid
   end
 end
 

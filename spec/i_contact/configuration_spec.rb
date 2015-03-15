@@ -18,15 +18,15 @@ describe IContact::Configuration do
   end
 
   it 'has an api key' do
-    configuration.app_id.should eql(app_id)
+    expect(configuration.app_id).to eql(app_id)
   end
 
   it 'has a user name' do
-    configuration.user_name.should eql(user_name)
+    expect(configuration.user_name).to eql(user_name)
   end
 
   it 'has a password' do
-    configuration.password.should eql(password)
+    expect(configuration.password).to eql(password)
   end
 
   it 'defaults the api version to 2.2' do
@@ -40,17 +40,17 @@ describe IContact::Configuration do
   describe 'validity' do
     it 'is invalid if I do not specify an app_id' do
       configuration.app_id = nil
-      configuration.should_not be_valid
+      expect(configuration).not_to be_valid
     end
 
     it 'is invalid if I do not specify a user_name' do
       configuration.user_name = nil
-      configuration.should_not be_valid
+      expect(configuration).not_to be_valid
     end
 
     it 'is invalid if I do not specify a password' do
       configuration.password = nil
-      configuration.should_not be_valid
+      expect(configuration).not_to be_valid
     end
   end
 end

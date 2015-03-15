@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://app.sandbox.icontact.com/icp/a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Api-Appid:
+      - <APP_ID>
+      Api-Username:
+      - <USER_NAME>
+      Api-Password:
+      - <PASSWORD>
+      Api-Version:
+      - '2.2'
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Mar 2015 01:02:59 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '322'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA1WQb0vDMBCHv0rJa6fturo/r9TCQJAhzr0QFUzb6xa8JiW5
+        imXsu3tZs+Hy7p7LPZf89kKWpek0ObF434tCISq9XZMFILEQ4uqEckX9BViT
+        JLggz8aRxNxUlzj3ehuGy0HzYI35xl4zCfsfK8aTZDKbpf6aaVqp+5Vsgqs8
+        SzZaEVTRcb3jDjRSIXM2Vr0DDaXEu62H12zxF7QsELw+4aqWv4OxVtZRWPDC
+        swbbHWOUZ7oeZAybDknlqEDT0mAFlrvxiW/cuW53RvvJaTIbpfP5KE1v51+e
+        /08mScbJlKELAa7ejkVIPIun0RIlFZ3bRfc/oDuIPm6iLMuijE6EB0gRhmxC
+        gq99C+EdritcaVUB9kk1ymvHWcxHHD550vBbxCLhvw7NcXwlTF07vz8+/AEh
+        eF8PEgIAAA==
+    http_version: 
+  recorded_at: Sun, 15 Mar 2015 01:02:59 GMT
+recorded_with: VCR 2.9.3

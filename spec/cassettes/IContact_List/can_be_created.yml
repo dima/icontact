@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://app.sandbox.icontact.com/icp/a/414883/c/126299/lists
+    body:
+      encoding: UTF-8
+      string: ! '[{"name":"Test List"}]'
+    headers:
+      Api-Appid:
+      - <APP_ID>
+      Api-Username:
+      - <USER_NAME>
+      Api-Password:
+      - <PASSWORD>
+      Api-Version:
+      - '2.2'
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Mar 2015 01:15:45 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '174'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: US-ASCII
+      string: ! '{"lists":[{"listId":"213618","name":"Test List","publicname":"","description":"","emailOwnerOnChange":1,"welcomeOnManualAdd":0,"welcomeOnSignupAdd":0,"welcomeMessageId":""}]}'
+    http_version: 
+  recorded_at: Sun, 15 Mar 2015 01:15:45 GMT
+- request:
+    method: delete
+    uri: https://app.sandbox.icontact.com/icp/a/414883/c/126299/lists/213618
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Api-Appid:
+      - <APP_ID>
+      Api-Username:
+      - <USER_NAME>
+      Api-Password:
+      - <PASSWORD>
+      Api-Version:
+      - '2.2'
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Mar 2015 01:15:46 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '2'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: US-ASCII
+      string: ! '[]'
+    http_version: 
+  recorded_at: Sun, 15 Mar 2015 01:15:45 GMT
+recorded_with: VCR 2.9.3

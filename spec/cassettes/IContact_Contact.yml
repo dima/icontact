@@ -246,4 +246,367 @@ http_interactions:
         which is required. Please provide an email field"]}'
     http_version: 
   recorded_at: Sat, 09 Jun 2012 20:12:11 GMT
-recorded_with: VCR 2.1.1
+- request:
+    method: post
+    uri: https://app.sandbox.icontact.com/icp/a//c//contacts
+    body:
+      encoding: UTF-8
+      string: ! '[{"email":"user@example.com"}]'
+    headers:
+      Api-Appid:
+      - <APP_ID>
+      Api-Username:
+      - <USER_NAME>
+      Api-Password:
+      - <PASSWORD>
+      Api-Version:
+      - '2.2'
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+  response:
+    status:
+      code: 501
+      message: Method Not Implemented
+    headers:
+      Date:
+      - Sun, 15 Mar 2015 00:28:31 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '50'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: US-ASCII
+      string: ! '{"errors":["Resource Or Version Not Implemented"]}'
+    http_version: 
+  recorded_at: Sun, 15 Mar 2015 00:28:31 GMT
+- request:
+    method: get
+    uri: https://app.sandbox.icontact.com/icp/a//c//contacts?unlisted=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Api-Appid:
+      - <APP_ID>
+      Api-Username:
+      - <USER_NAME>
+      Api-Password:
+      - <PASSWORD>
+      Api-Version:
+      - '2.2'
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 501
+      message: Method Not Implemented
+    headers:
+      Date:
+      - Sun, 15 Mar 2015 00:28:32 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '70'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA6tWSi0qyi8qVrKKVgpKLc4vLUpOVfAvUghLLSrOzM9T8Msv
+        UfDMLchJzU3NK0lNUYqtBQDoqCGBMgAAAA==
+    http_version: 
+  recorded_at: Sun, 15 Mar 2015 00:28:32 GMT
+- request:
+    method: post
+    uri: https://app.sandbox.icontact.com/icp/a//c//contacts
+    body:
+      encoding: UTF-8
+      string: ! '[{}]'
+    headers:
+      Api-Appid:
+      - <APP_ID>
+      Api-Username:
+      - <USER_NAME>
+      Api-Password:
+      - <PASSWORD>
+      Api-Version:
+      - '2.2'
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+  response:
+    status:
+      code: 501
+      message: Method Not Implemented
+    headers:
+      Date:
+      - Sun, 15 Mar 2015 00:28:33 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '50'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: US-ASCII
+      string: ! '{"errors":["Resource Or Version Not Implemented"]}'
+    http_version: 
+  recorded_at: Sun, 15 Mar 2015 00:28:32 GMT
+- request:
+    method: get
+    uri: https://app.sandbox.icontact.com/icp/a//c//contacts?email=user@example.com&unlisted=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Api-Appid:
+      - <APP_ID>
+      Api-Username:
+      - <USER_NAME>
+      Api-Password:
+      - <PASSWORD>
+      Api-Version:
+      - '2.2'
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 501
+      message: Method Not Implemented
+    headers:
+      Date:
+      - Sun, 15 Mar 2015 00:28:34 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '70'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA6tWSi0qyi8qVrKKVgpKLc4vLUpOVfAvUghLLSrOzM9T8Msv
+        UfDMLchJzU3NK0lNUYqtBQDoqCGBMgAAAA==
+    http_version: 
+  recorded_at: Sun, 15 Mar 2015 00:28:33 GMT
+- request:
+    method: get
+    uri: https://app.sandbox.icontact.com/icp/a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Api-Appid:
+      - <APP_ID>
+      Api-Username:
+      - <USER_NAME>
+      Api-Password:
+      - <PASSWORD>
+      Api-Version:
+      - '2.2'
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Authorization Required
+    headers:
+      Date:
+      - Sun, 15 Mar 2015 00:32:48 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '55'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA6tWSi0qyi8qVrKKVnIsyFQoLU4tykvMTVXIzCtLzMlMUYqt
+        BQB6PKzCIwAAAA==
+    http_version: 
+  recorded_at: Sun, 15 Mar 2015 00:32:47 GMT
+- request:
+    method: post
+    uri: https://app.sandbox.icontact.com/icp/a/413323/c//contacts
+    body:
+      encoding: UTF-8
+      string: ! '[{"email":"user@example.com"}]'
+    headers:
+      Api-Appid:
+      - <APP_ID>
+      Api-Username:
+      - <USER_NAME>
+      Api-Password:
+      - <PASSWORD>
+      Api-Version:
+      - '2.2'
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+  response:
+    status:
+      code: 401
+      message: Authorization Required
+    headers:
+      Date:
+      - Sun, 15 Mar 2015 00:38:52 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '35'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: US-ASCII
+      string: ! '{"errors":["Api username invalid"]}'
+    http_version: 
+  recorded_at: Sun, 15 Mar 2015 00:38:52 GMT
+- request:
+    method: post
+    uri: https://app.sandbox.icontact.com/icp/a/436994/c/8850/contacts
+    body:
+      encoding: UTF-8
+      string: ! '[{"email":"user@example.com"}]'
+    headers:
+      Api-Appid:
+      - <APP_ID>
+      Api-Username:
+      - <USER_NAME>
+      Api-Password:
+      - <PASSWORD>
+      Api-Version:
+      - '2.2'
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+  response:
+    status:
+      code: 401
+      message: Authorization Required
+    headers:
+      Date:
+      - Sun, 15 Mar 2015 00:47:34 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '35'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: US-ASCII
+      string: ! '{"errors":["Api username invalid"]}'
+    http_version: 
+  recorded_at: Sun, 15 Mar 2015 00:47:33 GMT
+- request:
+    method: post
+    uri: https://app.sandbox.icontact.com/icp/a/414883/c/126299/contacts
+    body:
+      encoding: UTF-8
+      string: ! '[{"email":"user@example.com"}]'
+    headers:
+      Api-Appid:
+      - <APP_ID>
+      Api-Username:
+      - <USER_NAME>
+      Api-Password:
+      - <PASSWORD>
+      Api-Version:
+      - '2.2'
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Mar 2015 00:57:01 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '285'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: US-ASCII
+      string: ! '{"contacts":[{"contactId":"67979259","prefix":"","firstName":"","lastName":"","suffix":"","street":"","street2":"","city":"","state":"","postalCode":"","phone":"","fax":"","business":"","email":"user@example.com","createDate":"2015-03-14
+        20:57:02","bounceCount":"","status":"normal"}]}'
+    http_version: 
+  recorded_at: Sun, 15 Mar 2015 00:57:02 GMT
+recorded_with: VCR 2.9.3

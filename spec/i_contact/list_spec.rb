@@ -1,13 +1,11 @@
 require 'spec_helper'
 
-describe IContact::List do
-  use_vcr_cassette
-
+describe IContact::List, :vcr => true do
   it 'can be created' do
     list = IContact::List.new(:name => "Test List")
-    list.save.should be_true
-    list.should be_persisted
-    lambda { list.destroy }.should_not raise_error
+    expect(list.save).to be_truthy
+    expect(list).to be_persisted
+    expect { list.destroy }.not_to raise_error
   end
 end
 

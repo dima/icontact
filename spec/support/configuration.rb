@@ -1,9 +1,7 @@
 IContact.configure do |config|
   config.mode = :sandbox
-  config.app_id = ENV["icontact_app_id"]
-  config.user_name = ENV["icontact_user_name"]
-  config.password = ENV["icontact_password"]
-  config.account_id = ENV["icontact_account_id"]
-  config.client_folder_id = ENV["icontact_client_folder_id"]
+  config.app_id = ENV["i_contact_app_id"]
+  config.user_name = ENV["i_contact_user_name"]
+  config.password = ENV["i_contact_password"]
 end
 

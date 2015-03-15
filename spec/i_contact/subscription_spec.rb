@@ -1,9 +1,7 @@
 require 'spec_helper'
 
-describe IContact::Subscription do
+describe IContact::Subscription, :vcr => true do
   let(:email) { "subscriber@example.com" }
-
-  use_vcr_cassette
 
   let(:contact) do
     c = IContact::Contact.new(:email => email)
@@ -15,6 +13,11 @@ describe IContact::Subscription do
     l = IContact::List.new(:name => "Test Subscription List")
     l.save
     l
+  end
+
+  before do
+    IContact.configuration.account_id = IContact::Account.get.first.account_id
+    IContact.configuration.client_folder_id = IContact::ClientFolder.get.first.client_folder_id
   end
 
   after(:each) do
@@ -29,7 +32,7 @@ describe IContact::Subscription do
       :status => 'normal'
     });
 
-    sub.save.should be_true
+    expect(sub.save).to be_truthy
   end
 end
 
