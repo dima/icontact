@@ -42,7 +42,7 @@ module IContact
 
       @connection ||= Faraday::Connection.new({
         :headers => headers,
-        :ssl => {:verify => true}}) do |builder|
+        :ssl => {:verify => false}}) do |builder|
 
         #builder.use Faraday::Request::UrlEncoded
         builder.adapter Faraday.default_adapter
